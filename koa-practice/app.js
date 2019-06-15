@@ -4,8 +4,8 @@ const bodyParser = require('koa-bodyparser');
 const path = require('path');
 const serve = require('koa-static');
 const main = serve(path.join(__dirname, 'static'));
-const PetsInfo = require('./controller');
-const {insertInfo, deleteInfoById, selectAllInfo} = new PetsInfo();
+const UsersInfo = require('./controller');
+const {insertInfo, deleteInfoById, selectAllInfo} = new UsersInfo();
 const app = new Koa();
 const router = new Router();
 
